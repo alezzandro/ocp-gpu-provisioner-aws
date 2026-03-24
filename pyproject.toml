@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocp-gpu-provisioner"
+version = "0.1.0"
+description = "Provision GPU-enabled worker MachineSets on AWS-backed OpenShift clusters"
+requires-python = ">=3.9"
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+ocp-gpu-provisioner = "ocp_gpu_provisioner.cli:entry_point"
+
+[tool.setuptools.packages.find]
+where = ["src"]
