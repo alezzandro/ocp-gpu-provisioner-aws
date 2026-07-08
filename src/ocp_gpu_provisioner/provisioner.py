@@ -33,7 +33,7 @@ CLUSTER_MANAGED_FIELDS = (
 
 @dataclass
 class ProvisionerConfig:
-    instance_type: str = "g6.xlarge"
+    instance_type: str = "g6.2xlarge"
     replicas: int = 0
     volume_size: int = 250
     dry_run: bool = False

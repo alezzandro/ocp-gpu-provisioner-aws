@@ -20,7 +20,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--instance-type",
-        default="g6.xlarge",
+        default="g6.2xlarge",
         help="AWS GPU instance type (default: %(default)s)",
     )
     parser.add_argument(

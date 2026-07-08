@@ -110,7 +110,7 @@ oc scale machineset <machineset-name> -n openshift-machine-api --replicas=1
 
 | Option | Default | Description |
 |---|---|---|
-| `--instance-type` | `g6.xlarge` | AWS GPU instance type |
+| `--instance-type` | `g6.2xlarge` | AWS GPU instance type |
 | `--replicas` | `0` | Replicas per AZ (0 = create MachineSet but don't launch machines) |
 | `--volume-size` | `250` | Root EBS volume size in GB |
 | `--dry-run` | off | Print generated YAML without applying |
